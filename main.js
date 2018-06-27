@@ -29,6 +29,7 @@ app.get('/scrape', (req, res) => {
             console.log('Header is found');
         });
         $('.ratingValue').filter(function () {
+            
             var data = $(this);
             rating = data.children().text();
             json.rating = rating;
